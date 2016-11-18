@@ -39,3 +39,8 @@ php artisan vendor:publish --tag=fullcalendar --force
         'Fullcalendar' => Edofre\Fullcalendar\Facades\Fullcalendar::class,
     ],
 ```
+
+Render the calendar by generating the HMTL and scripts
+```php
+    {!! $calendar->generate() !!}
+```

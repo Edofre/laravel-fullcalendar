@@ -57,6 +57,11 @@ class Event
     {
         foreach ($args as $key => $value) {
             $this->$key = $value;
+
+            // if we have start and end date keys we need to convert them
+            if (in_array($key, ['start', 'end'])) {
+                $this->$key = !is_null($value) ? $value->toIso8601String() : null;
+            }
         }
     }
 }

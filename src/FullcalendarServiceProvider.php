@@ -29,9 +29,10 @@ class FullcalendarServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        // Specify from where we want to load the views
         $this->loadViewsFrom(__DIR__ . '/views/', 'fullcalendar');
 
-
+        // TODO implement configuration file
         //            __DIR__ . '/../../../bower/fullcalendar/dist/gcal.js.js'  => public_path('js/gcal.js'),
 
         $this->publishes([
