@@ -1,8 +1,11 @@
 <?php
 
-
 namespace Edofre\Fullcalendar;
 
+/**
+ * Class Fullcalendar
+ * @package Edofre\Fullcalendar
+ */
 class Fullcalendar
 {
     /**

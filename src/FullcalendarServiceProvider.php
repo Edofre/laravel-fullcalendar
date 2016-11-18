@@ -4,6 +4,10 @@ namespace Edofre\Fullcalendar;
 
 use Illuminate\Support\ServiceProvider;
 
+/**
+ * Class FullcalendarServiceProvider
+ * @package Edofre\Fullcalendar
+ */
 class FullcalendarServiceProvider extends ServiceProvider
 {
     /**

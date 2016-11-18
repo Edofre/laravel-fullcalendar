@@ -23,7 +23,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "edofre\\fullcalendar\\": "src"
+      "Edofre\\Fullcalendar\\": "src"
     }
   },
   "extra": {

@@ -23,3 +23,16 @@ to the ```require``` section of your `composer.json` file.
 ### Fullcalender can be created as following, all options are optional, below is just an example of most options
 
 // TODO
+```php
+'providers' => [
+        ...
+        Edofre\Fullcalendar\FullcalendarServiceProvider::class,
+    ],
+```
+
+```php
+'aliases' => [
+        ...
+        'Fullcalendar' => Edofre\Fullcalendar\Facades\Fullcalendar::class,
+    ],
+```
