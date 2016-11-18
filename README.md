@@ -22,7 +22,10 @@ to the ```require``` section of your `composer.json` file.
 
 ### Fullcalender can be created as following, all options are optional, below is just an example of most options
 
-// TODO
+Publish assets
+
+php artisan vendor:publish --tag=fullcalendar --force
+
 ```php
 'providers' => [
         ...

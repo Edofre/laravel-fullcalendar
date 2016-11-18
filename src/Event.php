@@ -48,4 +48,15 @@ class Event
     public $borderColor;
     /** @var  string Sets an event's text color just like the calendar-wide eventTextColor option. */
     public $textColor;
+
+    /**
+     * Event constructor.
+     * @param $args
+     */
+    function __construct($args)
+    {
+        foreach ($args as $key => $value) {
+            $this->$key = $value;
+        }
+    }
 }
