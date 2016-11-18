@@ -1,0 +1,34 @@
+{
+  "name": "edofre/laravel-fullcalendar",
+  "description": "Laravel component for fullcalendar package",
+  "require": {
+    "php": ">=5.6.4",
+    "laravel/framework": "5.3.*",
+    "bower-asset/fullcalendar": "v3.0.1"
+  },
+  "keywords": [
+    "fullcalendar",
+    "javascript",
+    "event",
+    "calendar",
+    "laravel"
+  ],
+  "homepage": "https://github.com/edofre/laravel-fullcalendar",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Edo Freriks",
+      "email": "edofre@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "edofre\\fullcalendar\\": "src"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0.x-dev"
+    }
+  }
+}
