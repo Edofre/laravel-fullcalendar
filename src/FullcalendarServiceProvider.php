@@ -32,15 +32,17 @@ class FullcalendarServiceProvider extends ServiceProvider
         // Specify from where we want to load the views
         $this->loadViewsFrom(__DIR__ . '/views/', 'fullcalendar');
 
-        // TODO implement configuration file
-        //            __DIR__ . '/../../../bower/fullcalendar/dist/gcal.js.js'  => public_path('js/gcal.js'),
+        $this->publishes([
+            __DIR__ . '/config/laravel-fullcalendar.php' => config_path('laravel-fullcalendar.php'),
+        ], 'config');
 
         $this->publishes([
-            // Fullcalender library
+            // Fullcalendar library
             __DIR__ . '/../../../bower/fullcalendar/dist/fullcalendar.css'       => public_path('css/fullcalendar.css'),
             __DIR__ . '/../../../bower/fullcalendar/dist/fullcalendar.print.css' => public_path('css/fullcalendar.print.css'),
             __DIR__ . '/../../../bower/fullcalendar/dist/fullcalendar.js'        => public_path('js/fullcalendar.js'),
             __DIR__ . '/../../../bower/fullcalendar/dist/locale-all.js'          => public_path('js/locale-all.js'),
+            __DIR__ . '/../../../bower/fullcalendar/dist/gcal.js'                => public_path('js/gcal.js'),
             // Moment library
             __DIR__ . '/../../../bower/moment/moment.js'                         => public_path('js/moment.js'),
         ], 'fullcalendar');

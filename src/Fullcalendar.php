@@ -24,9 +24,7 @@ class Fullcalendar
         'firstDay' => 1,
     ];
     /** @var array */
-    protected $clientOptions = [
-
-    ];
+    protected $clientOptions = [];
     /** @var array */
     protected $callbacks = [];
 
@@ -48,7 +46,6 @@ class Fullcalendar
 
     /**
      * Create the <div> the calendar will be rendered into
-     *
      * @return string
      */
     private function calendar()
@@ -73,15 +70,15 @@ class Fullcalendar
     }
 
     /**
-     * Get the <script> block to render the calendar (as a View)
-     *
+     * Get the <script> block to render the calendar
      * @return \Illuminate\View\View
      */
     private function script()
     {
         return $this->view->make('fullcalendar::script', [
-            'id'      => $this->getId(),
-            'options' => $this->getOptionsJson(),
+            'id'           => $this->getId(),
+            'options'      => $this->getOptionsJson(),
+            'include_gcal' => config('laravel-fullcalendar.enable_gcal'),
         ]);
     }
 
@@ -148,7 +145,6 @@ class Fullcalendar
 
     /**
      * Replace placeholders with non-JSON encoded values
-     *
      * @param $json
      * @param $placeholders
      * @return string
@@ -187,5 +183,4 @@ class Fullcalendar
     {
         $this->events = $events;
     }
-
 }
