@@ -177,9 +177,10 @@ class Fullcalendar
     }
 
     /**
-     * @param array $events
+     * Array of events or a route that will provide json events
+     * @param mixed $events
      */
-    public function setEvents(array $events)
+    public function setEvents($events)
     {
         $this->events = $events;
     }

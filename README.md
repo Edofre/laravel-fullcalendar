@@ -13,7 +13,7 @@ $ php composer.phar require edofre/laravel-fullcalendar
 or add
 
 ```
-"edofre/laravel-fullcalendar": "*"
+"edofre/laravel-fullcalendar": "1.0.2"
 ```
 
 to the ```require``` section of your `composer.json` file.
@@ -77,7 +77,7 @@ Below is an example of a controller action configuring the calendar
                 }
             ",
         ]);
-        
+
         // Check out the documentation for all the options and callbacks.
         // https://fullcalendar.io/docs/
 
@@ -85,19 +85,19 @@ Below is an example of a controller action configuring the calendar
             'calendar' => $calendar,
         ]);
     }
-    
+
     /**
      * @param Request $request
      * @return string
      */
     public function ajaxEvents(Request $request)
     {
-        // start and end dates will be sent automatically by fullcalendar, they can be obtained using: 
-        // $request->get('start') & $request->get('end') 
+        // start and end dates will be sent automatically by fullcalendar, they can be obtained using:
+        // $request->get('start') & $request->get('end')
         $events = $this->getEvents();
         return json_encode($events);
     }
-    
+
     /**
      * @return array
      */
