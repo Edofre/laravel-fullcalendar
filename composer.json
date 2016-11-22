@@ -40,7 +40,7 @@
       "php artisan vendor:publish --tag=config",
       "php artisan vendor:publish --tag=fullcalendar"
     ]
-  },
+  }
 }
 
 //php artisan vendor:publish --tag=public --force
