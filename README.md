@@ -18,9 +18,7 @@ or add
 
 to the ```require``` section of your `composer.json` file.
 
-## Usage
-
-### Fullcalender can be created as following, all options are optional, below is just an example of most options
+## Configuration
 
 Publish assets and configuration files
 ```
@@ -36,7 +34,7 @@ Add the ServiceProvider to your config/app.php
     ],
 ```
 
-And add the facade if required
+And add the facade
 ```php
 'aliases' => [
         ...
@@ -44,6 +42,7 @@ And add the facade if required
     ],
 ```
 
+### Example
 Below is an example of a controller action configuring the calendar
 ```php
     public function index(\Illuminate\View\Factory $view)
@@ -59,6 +58,7 @@ Below is an example of a controller action configuring the calendar
 
         // Set options
         $calendar->setOptions([
+            'locale'      => 'nl',
             'weekNumbers' => true,
             'selectable'  => true,
             'defaultView' => 'agendaWeek',
