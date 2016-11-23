@@ -43,13 +43,13 @@ class FullcalendarServiceProvider extends ServiceProvider
         // publish all the required files to generate the calendar
         $this->publishes([
             // fullcalendar library
-            __DIR__ . '/../../../bower/fullcalendar/dist/fullcalendar.css'       => public_path('css/fullcalendar.css'),
-            __DIR__ . '/../../../bower/fullcalendar/dist/fullcalendar.print.css' => public_path('css/fullcalendar.print.css'),
-            __DIR__ . '/../../../bower/fullcalendar/dist/fullcalendar.js'        => public_path('js/fullcalendar.js'),
-            __DIR__ . '/../../../bower/fullcalendar/dist/locale-all.js'          => public_path('js/locale-all.js'),
-            __DIR__ . '/../../../bower/fullcalendar/dist/gcal.js'                => public_path('js/gcal.js'),
+            __DIR__ . '/../../../bower-asset/fullcalendar/dist/fullcalendar.css'       => public_path('css/fullcalendar.css'),
+            __DIR__ . '/../../../bower-asset/fullcalendar/dist/fullcalendar.print.css' => public_path('css/fullcalendar.print.css'),
+            __DIR__ . '/../../../bower-asset/fullcalendar/dist/fullcalendar.js'        => public_path('js/fullcalendar.js'),
+            __DIR__ . '/../../../bower-asset/fullcalendar/dist/locale-all.js'          => public_path('js/locale-all.js'),
+            __DIR__ . '/../../../bower-asset/fullcalendar/dist/gcal.js'                => public_path('js/gcal.js'),
             // moment library
-            __DIR__ . '/../../../bower/moment/moment.js'                         => public_path('js/moment.js'),
+            __DIR__ . '/../../../bower-asset/moment/moment.js'                         => public_path('js/moment.js'),
         ], 'fullcalendar');
     }
 
