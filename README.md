@@ -13,7 +13,7 @@ $ php composer.phar require edofre/laravel-fullcalendar
 or add
 
 ```
-"edofre/laravel-fullcalendar": "V1.0.4"
+"edofre/laravel-fullcalendar": "V1.0.5"
 ```
 
 to the ```require``` section of your `composer.json` file.
@@ -62,20 +62,17 @@ Below is an example of a controller action configuring the calendar
             'weekNumbers' => true,
             'selectable'  => true,
             'defaultView' => 'agendaWeek',
-        ]);
-
-        // Set callbacks
-        $calendar->setCallbacks([
-            'eventClick' => "
+            // Add the callbacks
+            'eventClick' => \Edofre\Fullcalendar\JsExpression("
                 function(event, jsEvent, view) {
                     console.log(event);
                 }
-            ",
-            'viewRender' => "
+            "),
+            'viewRender' => new \Edofre\Fullcalendar\JsExpression("
                 function( view, element ) {
                     console.log(\"View \"+view.name+\" rendered\");
                 }
-            ",
+            "),
         ]);
 
         // Check out the documentation for all the options and callbacks.
