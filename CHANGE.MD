@@ -1,6 +1,19 @@
 Change Log: `laravel-fullcalendar`
 ==================================
 
+## Version 1.0.5
+
+**Date:** 22-Nov-2016
+
+- Added JSON encoded
+- Removed callback option, now to be added via the options 
+
+## Version 1.0.4
+
+**Date:** 22-Nov-2016
+
+- Updated bower-asset location
+
 ## Version 1.0.3
 
 **Date:** 22-Nov-2016

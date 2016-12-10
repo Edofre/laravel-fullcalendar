@@ -25,8 +25,6 @@ class Fullcalendar
     ];
     /** @var array */
     protected $clientOptions = [];
-    /** @var array */
-    protected $callbacks = [];
 
     /**
      * @param Factory $view
@@ -88,20 +86,15 @@ class Fullcalendar
     public function getOptionsJson()
     {
         $options = $this->getOptions();
-        $placeholders = $this->getCallbackPlaceholders();
 
         if (!isset($options['events'])) {
             $options['events'] = $this->events;
         }
 
-        $parameters = array_merge($options, $placeholders);
-        $json = json_encode($parameters);
-        if ($placeholders) {
-            return $this->replaceCallbackPlaceholders($json, $placeholders);
-        }
-
-        return $json;
+        // Encode the JSON properly to format the callbacks
+        return JsonEncoder::encode($options);
     }
+
 
     /**
      * Get the fullcalendar options (not including the events list)
@@ -112,53 +105,6 @@ class Fullcalendar
         return array_merge($this->defaultOptions, $this->clientOptions);
     }
 
-    /**
-     * Generate placeholders for callbacks, will be replaced after JSON encoding
-     *
-     * @return array
-     */
-    protected function getCallbackPlaceholders()
-    {
-        $callbacks = $this->getCallbacks();
-        $placeholders = [];
-        foreach ($callbacks as $name => $callback) {
-            $placeholders[$name] = '[' . md5($callback) . ']';
-        }
-        return $placeholders;
-    }
-
-    /**
-     * @return array
-     */
-    public function getCallbacks()
-    {
-        return $this->callbacks;
-    }
-
-    /**
-     * @param array $callbacks
-     */
-    public function setCallbacks(array $callbacks)
-    {
-        $this->callbacks = $callbacks;
-    }
-
-    /**
-     * Replace placeholders with non-JSON encoded values
-     * @param $json
-     * @param $placeholders
-     * @return string
-     */
-    protected function replaceCallbackPlaceholders($json, $placeholders)
-    {
-        $search = [];
-        $replace = [];
-        foreach ($placeholders as $name => $placeholder) {
-            $search[] = '"' . $placeholder . '"';
-            $replace[] = $this->getCallbacks()[$name];
-        }
-        return str_replace($search, $replace, $json);
-    }
 
     /**
      * @param array $options
