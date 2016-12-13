@@ -11,7 +11,7 @@
     <script src="/js/gcal.js"></script>
 @endif
 
-<script>
+<script type="text/javascript">
     jQuery(document).ready(function () {
         jQuery('#{{ $id }}').fullCalendar({!! $options !!});
     });
