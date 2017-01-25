@@ -49,6 +49,28 @@ class Event
     /** @var  string Sets an event's text color just like the calendar-wide eventTextColor option. */
     public $textColor;
 
+    /** @var  array Validation rules */
+    public $rules = [
+        'id'               => '',
+        'title'            => 'required',
+        'allDay'           => '',
+        'start'            => 'required',
+        'end'              => '',
+        'url'              => '',
+        'className'        => '',
+        'editable'         => 'boolean',
+        'startEditable'    => 'boolean',
+        'durationEditable' => 'boolean',
+        'rendering'        => '',
+        'overlap'          => 'boolean',
+        'constraint'       => '',
+        'source'           => '',
+        'color'            => '',
+        'backgroundColor'  => '',
+        'borderColor'      => '',
+        'textColor'        => '',
+    ];
+
     /**
      * Event constructor.
      * @param $args
