@@ -1,6 +1,12 @@
 Change Log: `laravel-fullcalendar`
 ==================================
 
+## Version 1.0.6
+
+**Date:** 25-Jan-2017
+
+- Added $rules variable to Event object for easy validation of the object
+
 ## Version 1.0.5
 
 **Date:** 22-Nov-2016
