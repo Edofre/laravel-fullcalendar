@@ -13,7 +13,7 @@ $ php composer.phar require edofre/laravel-fullcalendar
 or add
 
 ```
-"edofre/laravel-fullcalendar": "V1.0.5"
+"edofre/laravel-fullcalendar": "V1.0.6"
 ```
 
 to the ```require``` section of your `composer.json` file.
