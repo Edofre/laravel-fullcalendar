@@ -3,7 +3,7 @@
   "description": "Laravel component for fullcalendar package",
   "require": {
     "php": ">=5.6.4",
-    "laravel/framework": "5.3.*",
+    "laravel/framework": "5.3.*|5.4.*",
     "bower-asset/fullcalendar": "v3.0.1"
   },
   "keywords": [

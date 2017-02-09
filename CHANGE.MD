@@ -1,6 +1,12 @@
 Change Log: `laravel-fullcalendar`
 ==================================
 
+## Version 1.0.7
+
+**Date:** 8-Feb-2017
+
+- Add laravel 5.4 support
+
 ## Version 1.0.6
 
 **Date:** 25-Jan-2017
