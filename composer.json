@@ -43,9 +43,7 @@
     "post-update-cmd": [
       "php artisan vendor:publish --tag=config",
       "php artisan vendor:publish --tag=fullcalendar"
-    ]
-  },
-  "scripts": {
+    ],
     "test": "phpunit"
   }
 }
