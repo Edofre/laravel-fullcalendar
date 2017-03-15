@@ -6,6 +6,10 @@
     "laravel/framework": "5.3.*|5.4.*",
     "bower-asset/fullcalendar": "v3.0.1"
   },
+  "require-dev": {
+    "orchestra/testbench": "~3.2.0|~3.3.0",
+    "phpunit/phpunit": "^5.0"
+  },
   "keywords": [
     "fullcalendar",
     "javascript",
@@ -39,6 +43,7 @@
     "post-update-cmd": [
       "php artisan vendor:publish --tag=config",
       "php artisan vendor:publish --tag=fullcalendar"
-    ]
+    ],
+    "test": "phpunit"
   }
 }
