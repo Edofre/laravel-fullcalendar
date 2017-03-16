@@ -2,13 +2,11 @@
 
 namespace Edofre\Fullcalendar\Test\Integration;
 
-use Orchestra\Testbench\TestCase as Orchestra;
-
 /**
- * Class TestCase
+ * Class EventTest
  * @package Edofre\Fullcalendar\Test\Integration
  */
-abstract class TestCase extends Orchestra
+abstract class TestCase extends \Orchestra\Testbench\TestCase
 {
     /**
      * Do any setup
@@ -16,5 +14,6 @@ abstract class TestCase extends Orchestra
     public function setUp()
     {
         parent::setUp();
+
     }
 }
