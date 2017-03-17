@@ -30,6 +30,11 @@
       "Edofre\\Fullcalendar\\": "src"
     }
   },
+  "autoload-dev": {
+    "psr-4": {
+      "Edofre\\Fullcalendar\\Test\\": "tests"
+    }
+  },
   "extra": {
     "branch-alias": {
       "dev-master": "1.0.x-dev"
