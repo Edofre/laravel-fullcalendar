@@ -1,6 +1,13 @@
 Change Log: `laravel-fullcalendar`
 ==================================
 
+## Version 1.0.8
+
+**Date:** 17-Mar-2017
+
+- Add tests!
+- Refactor the Fullcalendar so we don't need to pass trough the view anymore
+
 ## Version 1.0.7
 
 **Date:** 8-Feb-2017

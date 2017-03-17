@@ -2,8 +2,6 @@
 
 namespace Edofre\Fullcalendar;
 
-use Illuminate\View\Factory;
-
 /**
  * Class Fullcalendar
  * @package Edofre\Fullcalendar
@@ -25,14 +23,6 @@ class Fullcalendar
     ];
     /** @var array */
     protected $clientOptions = [];
-
-    /**
-     * @param Factory $view
-     */
-    public function __construct(Factory $view)
-    {
-        $this->view = $view;
-    }
 
     /**
      * @return string
@@ -73,11 +63,11 @@ class Fullcalendar
      */
     private function script()
     {
-        return $this->view->make('fullcalendar::script', [
+        return view('fullcalendar::script', [
             'id'           => $this->getId(),
             'options'      => $this->getOptionsJson(),
             'include_gcal' => config('laravel-fullcalendar.enable_gcal'),
-        ]);
+        ])->render();
     }
 
     /**

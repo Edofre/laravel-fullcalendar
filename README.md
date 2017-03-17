@@ -19,7 +19,7 @@ $ php composer.phar require edofre/laravel-fullcalendar
 or add
 
 ```
-"edofre/laravel-fullcalendar": "V1.0.7"
+"edofre/laravel-fullcalendar": "V1.0.8"
 ```
 
 to the ```require``` section of your `composer.json` file.
@@ -63,10 +63,10 @@ And add the facade
 ### Example
 Below is an example of a controller action configuring the calendar
 ```php
-    public function index(\Illuminate\View\Factory $view)
+    public function index()
     {
         // Generate a new fullcalendar instance
-        $calendar = new \Edofre\Fullcalendar\Fullcalendar($view);
+        $calendar = new \Edofre\Fullcalendar\Fullcalendar();
 
         // You can manually add the objects as an array
         $events = $this->getEvents();
@@ -164,4 +164,12 @@ Below is an example of a controller action configuring the calendar
 You can then render the calendar by generating the HMTL and scripts
 ```php
     {!! $calendar->generate() !!}
+```
+
+
+## Tests
+
+Run the tests by executing the following command:
+```
+composer test
 ```
