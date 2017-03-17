@@ -14,6 +14,27 @@ abstract class TestCase extends \Orchestra\Testbench\TestCase
     public function setUp()
     {
         parent::setUp();
+    }
 
+    /**
+     * @param \Illuminate\Foundation\Application $app
+     * @return array
+     */
+    protected function getPackageProviders($app)
+    {
+        return [
+            \Edofre\Fullcalendar\FullcalendarServiceProvider::class,
+        ];
+    }
+
+    /**
+     * @param \Illuminate\Foundation\Application $app
+     * @return array
+     */
+    protected function getPackageAliases($app)
+    {
+        return [
+            'Fullcalendar' => \Edofre\Fullcalendar\Facades\Fullcalendar::class,
+        ];
     }
 }
