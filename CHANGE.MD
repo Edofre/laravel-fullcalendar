@@ -1,6 +1,12 @@
 Change Log: `laravel-fullcalendar`
 ==================================
 
+## Version 1.0.10
+
+**Date:** 18-Apr-2017
+
+- Requirements update, only specify laravel 5.*
+
 ## Version 1.0.9
 
 **Date:** 17-Mar-2017
