@@ -1,6 +1,12 @@
 Change Log: `laravel-fullcalendar`
 ==================================
 
+## Version 1.0.11
+
+**Date:** 11-May-2017
+
+- Rename config file, we know it's a laravel config file...
+
 ## Version 1.0.10
 
 **Date:** 18-Apr-2017
