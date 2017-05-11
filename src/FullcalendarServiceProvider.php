@@ -37,7 +37,7 @@ class FullcalendarServiceProvider extends ServiceProvider
 
         // publish the config file
         $this->publishes([
-            __DIR__ . '/config/laravel-fullcalendar.php' => config_path('laravel-fullcalendar.php'),
+            __DIR__ . '/config/fullcalendar.php' => config_path('fullcalendar.php'),
         ], 'config');
 
         // publish all the required files to generate the calendar
