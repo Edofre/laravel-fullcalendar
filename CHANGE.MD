@@ -1,6 +1,12 @@
 Change Log: `laravel-fullcalendar`
 ==================================
 
+## Version 1.1.0
+
+**Date:** 19-May-2017
+
+- Include travis automated testing
+
 ## Version 1.0.11
 
 **Date:** 11-May-2017
