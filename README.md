@@ -5,6 +5,7 @@
 [![Latest Unstable Version](https://poser.pugx.org/edofre/laravel-fullcalendar/v/unstable)](https://packagist.org/packages/edofre/laravel-fullcalendar)
 [![License](https://poser.pugx.org/edofre/laravel-fullcalendar/license)](https://packagist.org/packages/edofre/laravel-fullcalendar)
 [![composer.lock](https://poser.pugx.org/edofre/laravel-fullcalendar/composerlock)](https://packagist.org/packages/edofre/laravel-fullcalendar)
+[![Build Status](https://travis-ci.org/Edofre/fullcalendar.svg?branch=master)](https://travis-ci.org/Edofre/fullcalendar)
 
 ## Installation
 
