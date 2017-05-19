@@ -10,8 +10,8 @@ env:
 
 before_script:
   - travis_retry composer self-update
+  - composer global require "fxp/composer-asset-plugin:~1.3"
   - travis_retry composer update ${COMPOSER_FLAGS} --no-interaction --prefer-source
-  - travis_retry composer global require "fxp/composer-asset-plugin:~1.3"
 
 script:
   - phpunit --coverage-text --coverage-clover=coverage.clover
