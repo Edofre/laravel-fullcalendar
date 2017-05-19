@@ -34,8 +34,8 @@ class EventTest extends \Orchestra\Testbench\TestCase
             ]
         );
 
-        $this->assertEquals("2016-11-16T10:00:00+00:00", $event->start);
-        $this->assertNotEquals("2016-11-16T10:00:00+00:00", $event->end);
+        $this->assertEquals("2016-11-16T10:00:00+0000", $event->start);
+        $this->assertNotEquals("2016-11-16T10:00:00+0000", $event->end);
     }
 
     /** @test */
@@ -66,8 +66,8 @@ class EventTest extends \Orchestra\Testbench\TestCase
         $this->assertNotEquals('2', $event->id);
         $this->assertEquals("Test event", $event->title);
         $this->assertEquals(false, $event->allDay);
-        $this->assertEquals("2016-11-16T10:00:00+00:00", $event->start);
-        $this->assertNotEquals("2016-11-16T10:00:00+00:00", $event->end);
+        $this->assertEquals("2016-11-16T10:00:00+0000", $event->start);
+        $this->assertNotEquals("2016-11-16T10:00:00+0000", $event->end);
         $this->assertEquals('www.test.dev', $event->url);
         $this->assertNotEquals('event-test', $event->className);
         $this->assertEquals(true, $event->editable);
