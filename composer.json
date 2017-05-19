@@ -1,15 +1,6 @@
 {
   "name": "edofre/laravel-fullcalendar",
   "description": "Laravel component for fullcalendar package",
-  "require": {
-    "php": ">=5.6.4",
-    "laravel/framework": "5.*",
-    "bower-asset/fullcalendar": "v3.0.1"
-  },
-  "require-dev": {
-    "orchestra/testbench": "~3.2.0|~3.3.0",
-    "phpunit/phpunit": "^5.0"
-  },
   "keywords": [
     "fullcalendar",
     "javascript",
@@ -25,6 +16,15 @@
       "email": "edofre@gmail.com"
     }
   ],
+  "require": {
+    "php": ">=5.6.4",
+    "laravel/framework": "5.*",
+    "bower-asset/fullcalendar": "v3.0.1"
+  },
+  "require-dev": {
+    "orchestra/testbench": "~3.2.0|~3.3.0",
+    "phpunit/phpunit": "^5.0"
+  },
   "autoload": {
     "psr-4": {
       "Edofre\\Fullcalendar\\": "src"
@@ -35,20 +35,7 @@
       "Edofre\\Fullcalendar\\Test\\": "tests"
     }
   },
-  "extra": {
-    "branch-alias": {
-      "dev-master": "1.0.x-dev"
-    }
-  },
   "scripts": {
-    "post-install-cmd": [
-      "php artisan vendor:publish --tag=config",
-      "php artisan vendor:publish --tag=fullcalendar"
-    ],
-    "post-update-cmd": [
-      "php artisan vendor:publish --tag=config",
-      "php artisan vendor:publish --tag=fullcalendar"
-    ],
     "test": "phpunit"
   }
 }
