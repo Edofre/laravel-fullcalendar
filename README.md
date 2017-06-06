@@ -82,7 +82,7 @@ Below is an example of a controller action configuring the calendar
             'selectable'  => true,
             'defaultView' => 'agendaWeek',
             // Add the callbacks
-            'eventClick' => \Edofre\Fullcalendar\JsExpression("
+            'eventClick' => new \Edofre\Fullcalendar\JsExpression("
                 function(event, jsEvent, view) {
                     console.log(event);
                 }
