@@ -6,7 +6,7 @@
 [![License](https://poser.pugx.org/edofre/laravel-fullcalendar/license)](https://packagist.org/packages/edofre/laravel-fullcalendar)
 [![composer.lock](https://poser.pugx.org/edofre/laravel-fullcalendar/composerlock)](https://packagist.org/packages/edofre/laravel-fullcalendar)
 [![Build Status](https://travis-ci.org/Edofre/laravel-fullcalendar.svg?branch=master)](https://travis-ci.org/Edofre/laravel-fullcalendar)
-[![Coverage Status](https://coveralls.io/repos/github/Edofre/laravel-fullcalendar/badge.svg?branch=master)](https://coveralls.io/github/Edofre/laravel-fullcalendar?branch=master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Edofre/laravel-fullcalendar/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Edofre/laravel-fullcalendar/?branch=master)
 
 ## Installation
 
