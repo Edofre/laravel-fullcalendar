@@ -1,6 +1,19 @@
 Change Log: `laravel-fullcalendar`
 ==================================
 
+## Version 1.1.1
+
+**Date:** 14-Jun-2017
+
+- Include scrutinizer badge
+
+## Version 1.1.1
+
+**Date:** 14-Jun-2017
+
+- Update bower to npm
+- New fullcalendar version (3.4.0)
+
 ## Version 1.1.0
 
 **Date:** 19-May-2017
