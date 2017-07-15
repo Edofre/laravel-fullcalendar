@@ -1,7 +1,13 @@
 Change Log: `laravel-fullcalendar`
 ==================================
 
-## Version 1.1.1
+## Version 1.1.3
+
+**Date:** 15-Jul-2017
+
+- Laravel 5.5 auto discovery
+
+## Version 1.1.2
 
 **Date:** 14-Jun-2017
 
