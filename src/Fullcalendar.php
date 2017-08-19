@@ -25,6 +25,17 @@ class Fullcalendar
     protected $clientOptions = [];
 
     /**
+     * Renders the view that includes the script files
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public static function renderScriptFiles()
+    {
+        return view('fullcalendar::files', [
+            'include_gcal' => config('fullcalendar.enable_gcal'),
+        ]);
+    }
+
+    /**
      * @return string
      */
     public function generate()
@@ -64,9 +75,10 @@ class Fullcalendar
     private function script()
     {
         return view('fullcalendar::script', [
-            'id'           => $this->getId(),
-            'options'      => $this->getOptionsJson(),
-            'include_gcal' => config('laravel-fullcalendar.enable_gcal'),
+            'id'              => $this->getId(),
+            'options'         => $this->getOptionsJson(),
+            'include_scripts' => config('fullcalendar.include_scripts', true),
+            'include_gcal'    => config('fullcalendar.enable_gcal', false),
         ])->render();
     }
 

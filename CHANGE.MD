@@ -1,6 +1,12 @@
 Change Log: `laravel-fullcalendar`
 ==================================
 
+## Version 1.2.0
+
+**Date:** 19-Aug-2017
+
+- Added include_scripts option to configuration so user can decide to load scripts himself
+
 ## Version 1.1.3
 
 **Date:** 15-Jul-2017

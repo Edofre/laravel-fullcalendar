@@ -21,7 +21,7 @@ $ php composer.phar require edofre/laravel-fullcalendar
 or add
 
 ```
-"edofre/laravel-fullcalendar": "V1.1.3"
+"edofre/laravel-fullcalendar": "V1.2.0"
 ```
 
 to the ```require``` section of your `composer.json` file.
@@ -60,6 +60,13 @@ And add the facade
         ...
         'Fullcalendar' => Edofre\Fullcalendar\Facades\Fullcalendar::class,
     ],
+```
+
+### Manually loading script files
+By setting the include_scripts option in the config/.env file to false the scripts will not be included when generating the calendar.
+If you want to manually include the scripts you can call the following static function in your header/footer/etc.
+```
+    \Edofre\Fullcalendar\Fullcalendar::renderScriptFiles();
 ```
 
 ### Example
