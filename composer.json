@@ -41,7 +41,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "EdoFre\\Fullcalendar\\FullcalendarServiceProvider"
+        "Edofre\\Fullcalendar\\FullcalendarServiceProvider"
       ],
       "aliases": {
         "Fullcalendar": "EdoFre\\Fullcalendar\\Facades\\Fullcalendar"
