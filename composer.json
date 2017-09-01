@@ -44,7 +44,7 @@
         "Edofre\\Fullcalendar\\FullcalendarServiceProvider"
       ],
       "aliases": {
-        "Fullcalendar": "EdoFre\\Fullcalendar\\Facades\\Fullcalendar"
+        "Fullcalendar": "Edofre\\Fullcalendar\\Facades\\Fullcalendar"
       }
     }
   }
