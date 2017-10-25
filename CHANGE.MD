@@ -1,6 +1,12 @@
 Change Log: `laravel-fullcalendar`
 ==================================
 
+## Version 1.2.3
+
+**Date** 25-Oct-2017
+
+- Files do not have to be in the root directory of the domain anymore, thanks @ebarquero85
+
 ## Version 1.2.2
 
 **Date:** 6-Oct-2017
