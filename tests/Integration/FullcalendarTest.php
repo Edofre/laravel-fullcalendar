@@ -25,13 +25,13 @@ class FullcalendarTest extends TestCase
 
         // This looks terrible, I'm sorry...
         $this->assertEquals("<div id='fullcalendar'></div><!-- fullcalendar css -->
-<link href=\"/css/fullcalendar.print.css\" rel=\"stylesheet\" media=\"print\">
-<link href=\"/css/fullcalendar.css\" rel=\"stylesheet\">
+<link href=\"http://localhost/css/fullcalendar.print.css\" rel=\"stylesheet\" media=\"print\">
+<link href=\"http://localhost/css/fullcalendar.css\" rel=\"stylesheet\">
 <!-- moment js -->
-<script src=\"/js/moment.js\"></script>
+<script src=\"http://localhost/js/moment.js\"></script>
 <!-- fullcalendar js -->
-<script src=\"/js/fullcalendar.js\"></script>
-<script src=\"/js/locale-all.js\"></script>
+<script src=\"http://localhost/js/fullcalendar.js\"></script>
+<script src=\"http://localhost/js/locale-all.js\"></script>
 
 
 <script type=\"text/javascript\">
