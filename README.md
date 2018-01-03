@@ -21,7 +21,7 @@ $ php composer.phar require edofre/laravel-fullcalendar
 or add
 
 ```
-"edofre/laravel-fullcalendar": "V1.2.3"
+"edofre/laravel-fullcalendar": "V1.2.4"
 ```
 
 to the ```require``` section of your `composer.json` file.
@@ -32,7 +32,7 @@ This plugin enables you to download bower packages through composer.
 
 You can install it using this command:
 ```
-composer global require "fxp/composer-asset-plugin:^1.3.0”
+composer global require "fxp/composer-asset-plugin:^1.4.0”
 ```
 
 This will add the fxp composer-asset-plugin and your composer will be able to find and download the required bower-asset/fullcalendar package.
